@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Blast_Off_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="darkBlueBG" translatesAutoresizingMaskIntoConstraints="NO" id="kO9-NU-ijh">
+                                <rect key="frame" x="0.0" y="0.0" width="436" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rok-1s-N5A">
+                                <rect key="frame" x="159" y="400" width="96" height="96"/>
+                                <state key="normal" image="powerButton"/>
+                                <connections>
+                                    <action selector="powerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n8x-0t-8xI"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ou3-74-cPL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rocketAndStream" translatesAutoresizingMaskIntoConstraints="NO" id="iWX-Wt-Lsf">
+                                        <rect key="frame" x="0.0" y="396" width="414" height="768"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="768" id="3RL-fK-rRS"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudsAndOrangeOval" translatesAutoresizingMaskIntoConstraints="NO" id="R6I-xu-cz5">
+                                        <rect key="frame" x="0.0" y="248" width="414" height="648"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="648" id="UPj-fY-74y"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLAST OFF!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJG-r8-0DN">
+                                        <rect key="frame" x="8" y="605" width="398" height="112"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="112" id="gIQ-tV-ggp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="53"/>
+                                        <color key="textColor" red="0.75663607882470196" green="0.2116810827752523" blue="0.11868775716996773" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="R6I-xu-cz5" firstAttribute="centerX" secondItem="Ou3-74-cPL" secondAttribute="centerX" id="AjQ-5V-tFZ"/>
+                                    <constraint firstItem="iWX-Wt-Lsf" firstAttribute="top" secondItem="Ou3-74-cPL" secondAttribute="top" constant="396" id="Ccy-E3-62J"/>
+                                    <constraint firstItem="OJG-r8-0DN" firstAttribute="leading" secondItem="Ou3-74-cPL" secondAttribute="leadingMargin" id="M2b-Ig-Eqd"/>
+                                    <constraint firstAttribute="bottom" secondItem="R6I-xu-cz5" secondAttribute="bottom" id="dxx-XA-f7b"/>
+                                    <constraint firstAttribute="bottom" secondItem="OJG-r8-0DN" secondAttribute="bottom" constant="179" id="g93-F6-CsH"/>
+                                    <constraint firstItem="R6I-xu-cz5" firstAttribute="leading" secondItem="iWX-Wt-Lsf" secondAttribute="leading" id="qPT-SO-JjG"/>
+                                    <constraint firstItem="OJG-r8-0DN" firstAttribute="centerX" secondItem="R6I-xu-cz5" secondAttribute="centerX" id="tVc-3y-wRb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ou3-74-cPL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-44" id="9Iz-H2-OsX"/>
+                            <constraint firstItem="kO9-NU-ijh" firstAttribute="leading" secondItem="Ou3-74-cPL" secondAttribute="leading" id="OUc-YS-hjt"/>
+                            <constraint firstItem="Ou3-74-cPL" firstAttribute="centerX" secondItem="Rok-1s-N5A" secondAttribute="centerX" id="Poc-Hg-Wzw"/>
+                            <constraint firstItem="Ou3-74-cPL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rcy-eD-29U"/>
+                            <constraint firstItem="kO9-NU-ijh" firstAttribute="top" secondItem="Ou3-74-cPL" secondAttribute="top" id="ga4-vN-yro"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kO9-NU-ijh" secondAttribute="trailing" constant="-42" id="gfM-DD-SXt"/>
+                            <constraint firstItem="Ou3-74-cPL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hIG-uI-9IL"/>
+                            <constraint firstItem="Ou3-74-cPL" firstAttribute="centerY" secondItem="Rok-1s-N5A" secondAttribute="centerY" id="iZM-2o-zTF"/>
+                            <constraint firstItem="kO9-NU-ijh" firstAttribute="bottom" secondItem="Ou3-74-cPL" secondAttribute="bottom" id="nT3-ya-D4T"/>
+                            <constraint firstItem="Ou3-74-cPL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nmm-61-ljx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blastOffLabel" destination="OJG-r8-0DN" id="oXw-lB-aZl"/>
+                        <outlet property="cloudContainerView" destination="Ou3-74-cPL" id="iKu-qR-n4i"/>
+                        <outlet property="darkBlueBackground" destination="kO9-NU-ijh" id="LP7-GC-iJt"/>
+                        <outlet property="powerButton" destination="Rok-1s-N5A" id="pV6-CB-50o"/>
+                        <outlet property="rocketImage" destination="iWX-Wt-Lsf" id="Rtw-Wf-CFU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-968.11594202898561" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloudsAndOrangeOval" width="414" height="477"/>
+        <image name="darkBlueBG" width="414" height="736"/>
+        <image name="powerButton" width="96" height="96"/>
+        <image name="rocketAndStream" width="414" height="672"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
